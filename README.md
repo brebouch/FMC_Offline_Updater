@@ -8,8 +8,9 @@ Please be aware this project is a proof of concept and is not expected to be use
 
 ## Requirements
 
-1. API credentials to Cisco Secure Firewall Management Center
-2. Compute resource with python3 installed
+1. Linux server hosting directory for SCP files
+2. Credentials to access Linux server with appropriate directory permissions
+3. Compute resource with python3 installed
 
 ## Configuration
 
