@@ -1,7 +1,7 @@
 # Secure Firewall Offline Updater
 
 ## Overview
-This tool is a work in progress effort example to pull offline update packages for Cisco Secure Firewall and store them in a remote server directory,
+This tool is a work in progress effort example to pull offline update packages for Cisco Secure Firewall and store them in a remote server directory
 
 ### Note
 Please be aware this project is a proof of concept and is not expected to be used as a production application without due diligence.
