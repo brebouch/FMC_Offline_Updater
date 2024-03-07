@@ -20,10 +20,12 @@ Please be aware this project is a proof of concept and is not expected to be use
 4. Run the following command with associated arguments:
 
 ```bash
-python3 fmc_offline_updater.py --server SCP_IP_HOSTNAME --user admin --password PASSWORD --directory /scp --minimum_version 7.2
+python3 fmc_offline_updater.py --content_update_url "https://example-url.com" --image_update_url "https://example-url.com" --server SCP_IP_HOSTNAME --user admin --password PASSWORD --directory /scp --minimum_version 7.2
 ```
 
 Arguments: 
+* --content_update_url, url for pulling dynamic content update files
+* --image_update_url, url for pulling dynamic image update files
 * --server, Hostname or IP of FMC
 * --user, IP or hostname of the SCP server
 * --password, Password for authenticating with SCP Server
