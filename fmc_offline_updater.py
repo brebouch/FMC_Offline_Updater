@@ -126,6 +126,14 @@ def get_image_updates():
                 get_file(images_base_url, f['file_path'])
 
 
+def get_snort_rule_updates():
+    files = get_sf_xml()
+    for f in files['support_files']['file']:
+        if 'Cisco_Firepower_SRU' in f['file_name']:
+            if not check_remote_files(f['file_name']):
+                get_file(f'{sf_url}/Download', f['file_path'])
+
+
 def get_content_updates():
     files = get_sf_xml()
     for f in files['support_files']['file']:
@@ -139,6 +147,7 @@ def get_content_updates():
 def get_updates():
     # get_image_updates()
     get_content_updates()
+    get_snort_rule_updates()
 
 
 def get_file(url, file_name):
