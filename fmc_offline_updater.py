@@ -146,7 +146,7 @@ def get_content_updates():
 
 def get_updates():
     # get_image_updates()
-    get_content_updates()
+    #get_content_updates()
     get_snort_rule_updates()
 
 
